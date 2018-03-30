@@ -1,0 +1,229 @@
+<html>
+<head>
+  <title>Resume | Logan Lemirande</title>
+  <meta charset="UTF-8"><!--[if IE]><![endif]-->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Logan Lemirande | Software Engineer</title>
+  <link rel="shortcut icon" href="http://llemirande.com/img/logo-black.png" hreflang="en-us">
+
+  <meta property="og:title" content="Resume | Logan Lemirande" />
+  <meta property="og:description" content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.llemirande.com/resume" />
+  <meta property="og:site_name" content="Resume | Logan Lemirande" />
+  <meta property="og:image" content="http://llemirande.com/img/og.png" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="672" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:locale" content="en_US">
+
+  <meta name="description" content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design.">
+  <meta name="keywords" content="design, development, web, llemirande, logan, lemirande, software, UWSP, CIS, engineer">
+  <meta name="google-site-verification" content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk" />
+
+  <meta itemprop="name" content="Resume | Logan Lemirande">
+  <meta itemprop="description" content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design.">
+  <meta itemprop="image" content="http://llemirande.com/img/og.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://llemirande.com/resume">
+  <meta name="twitter:site" content="@bchiang7">
+  <meta name="twitter:creator" content="@bchiang7">
+  <meta name="twitter:title" content="Resume | Logan Lemirande">
+  <meta name="twitter:description" content="Design-minded, detail oriented web developer passionate about combining beautiful code with beautiful design.">
+  <meta name="twitter:image:src" content="http://llemirande.com/img/og.png">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:200,300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="content"></div>
+  <script src="https://fb.me/react-0.14.6.js"></script>
+  <script src="https://fb.me/react-dom-0.14.6.js"></script>
+  <script src="https://unpkg.com/react@0.12.1/dist/JSXTransformer.js"></script>
+  <script type="text/jsx">
+
+    var DATA = {
+      name: "Logan Lemirande",
+      subtext: "UW-Stevens Point, Computer Information Systems",
+      jobStatus: "Software Engineer @ American Family Insurance",
+      twitterURL: 'https://twitter.com/bchiang7',
+      instaURL: 'https://www.instagram.com/bchiang7/',
+      githubURL: 'https://github.com/bchiang7',
+      linkedinURL: 'https://www.linkedin.com/in/bchiang7',
+      resumeURL: 'http://llemirande.com/resume.pdf'
+    }
+
+    var App = React.createClass({
+      render: function() {
+        return(
+          <div className="app">
+            <Left
+              name={this.props.profileData.name}
+              subtext={this.props.profileData.subtext}
+              jobStatus={this.props.profileData.jobStatus}
+              twitterURL={this.props.profileData.twitterURL}
+              instaURL={this.props.profileData.instaURL}
+              githubURL={this.props.profileData.githubURL}
+              linkedinURL={this.props.profileData.linkedinURL}
+            />
+            <Right
+              intro={this.props.profileData.intro}
+              resumeURL={this.props.profileData.resumeURL}
+            />
+          </div>
+        );
+      }
+    });
+
+    var Left = React.createClass({
+      render: function() {
+        return(
+          <div className="left">
+            <div className="bg-img"></div>
+            <div className="left-inner">
+              <div className="info">
+                <h2 className="name">{this.props.name}</h2>
+                <div className="subtext">{this.props.subtext}</div>
+                <div className="jobStatus">{this.props.jobStatus}</div>
+                <div className="social-links">
+                  <a href={this.props.twitterURL} target="_blank"><i className="fa fa-twitter"></i></a>
+                  <a href={this.props.instaURL} target="_blank"><i className="fa fa-instagram"></i></a>
+                  <a href={this.props.githubURL} target="_blank"><i className="fa fa-github"></i></a>
+                  <a href={this.props.linkedinURL}  target="_blank"><i className="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      }
+    });
+
+    var Right = React.createClass({
+      render: function() {
+        return(
+          <div className="right">
+            <div className="right-inner">
+              <div className="introduction">
+                <h4>Intro</h4>
+                <div className="content">
+                  <p className="intro-p">I&#39;m currently in my second year of employment with American Family Insurance in Madison, WI.</p>
+                  <p className="intro-p">I enjoy developing innovative busines solutions through application and web design.</p>
+                </div>
+              </div>
+              <div className="skills">
+                <h4>Skills</h4>
+                <div className="content">
+                  <div className="skill-category">
+                    <strong>Languages: &nbsp;</strong>
+                    <span>Java, JS, Python, C#, HTML5, CSS3, Angular2, Typescript, R, VB.NET, Perl, SQL, PHP, Ruby</span>
+                  </div>
+                  <div className="skill-category">
+                    <strong>Libraries &amp; Frameworks: &nbsp;</strong>
+                    <span>Node.js, Angularjs, React, Xamarin, Django, ASP.NET MVC, jQuery, bootstrap</span>
+                  </div>
+                  <div className="skill-category">
+                    <strong>Tools: &nbsp;</strong>
+                    <span>ServiceNow, TFS, Visual Studio, Dynatrace, Delphix, DevTest, SoapUI, GIT, JBoss, MongoDB, MySQL, SQLite, Oracle</span>
+                  </div>
+                </div>
+              </div>
+              <div className="education">
+                <h4>Education</h4>
+                <div className="content">
+                  <div className="university"><a href="https://www.uwsp.edu/Pages/default.aspx" target="_blank">UW - Stevens Point</a></div>
+                  <div className="college"><a href="https://www.uwsp.edu/cnmt/Pages/major.aspx?name=Computer%20Information%20Systems" target="_blank">College of Letters and Science</a></div>
+                  <div className="major"><strong>Major:</strong> Computer Information Systems</div>
+                  <div className="conc"><strong>Concentration:</strong> Application Development</div>
+                  <div className="grad-date">January 2017 Graduate</div>
+                </div>
+              </div>
+              <div className="experience">
+                <h4>Experience</h4>
+                <div className="content">
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="https://www.amfam.com/" target="_blank">American Family Insurance</a>
+                      <div className="duration">March 2017 &mdash; Present</div>
+                    </div>
+                    <div className="title">Software Engineer</div>
+                    <ul className="description">
+                      <li>Utilized C# to develop methods for automating processes within TFS</li>
+                      <li>Developed a portal application for I/S to help centralize tools and information using ServiceNow custom application interface</li>
+                      <li>Collaborated directly with application teams to configure Dynatrace business transactions, alerting, and dashboards</li>
+                      <li>Developed a python script to identify software counts on individual machines to analyze trends and reduce software licensing</li>
+                      <li>Support I/S with reusable components, guides, code issues, leveraging of tools, and tool assessments</li>               
+                    </ul>
+                  </div>
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="http://www.lyconinc.com/" target="_blank">Lycon Inc.</a>
+                      <div className="duration">May 2016 &mdash; Jan 2017</div>
+                    </div>
+                    <div className="title">Internship in Network Security and Management</div>
+                    <ul className="description">
+                      <li>Maintained hardware and software, including servers, network nodes, and wiring</li>
+                      <li>Analyzed network needs and contributed in the design of network architecture</li>
+                      <li>Installed security cameras and implemented a network security system </li>
+                      <li>Configured a new router for VPN usage at every plant for better connectivity, improved security, and access to restricted resources</li>                   
+                    </ul>
+                  </div>
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="https://catalog.uwsp.edu/preview_course_nopop.php?catoid=11&coid=34999" target="_blank">UWSP Hockey Stat Tracking Application</a>
+                      <div className="duration">Jan 2016 &mdash; May 2016</div>
+                    </div>
+                    <div className="title">Applied System Development Project</div>
+                    <ul className="description">
+                      <li>Developed a stat-tracking application to allow our coaches to better record and analyze video using an android tablet</li>
+                      <li>Demonstrated formal presentations and group dynamics to solve application problems</li>
+                      <li>Used a team approach to analyze, design, and document the application</li>
+                    </ul>
+                  </div>
+                  <div className="exp-item">
+                    <div className="job">
+                      <a className="company" href="http://athletics.uwsp.edu/index.aspx?path=mhockey" target="_blank">UWSP - Hockey Team</a>
+                      <div className="duration">Aug 2014 &mdash; Mar 2016</div>
+                    </div>
+                    <div className="title">Collegiate Hockey Player</div>
+                    <ul className="description">
+                      <li>Dedicated over 40 hours a week to training, practice, and games</li>
+                      <li>Achieved highest team goal of winning a National Championship</li>
+                      <li>Cooperated with professors to setup up separate exam times or makeup work</li>
+                      <li>Awarded all-conference honors</li>                   
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="projects">
+                <h4>Projects</h4>
+                <div className="content">
+                  <div className="project-item">
+                    <a className="project-title">Book Rental Store</a>
+                    <p className="project-desc">Web app to maintain admin, users, and their rentals using ASP.NET MVC</p>
+                  </div>
+                  <div className="project-item">
+                    <div className="project-title">E&mdash;commerce</div>
+                    <p className="project-desc">Web app to handle commercial transactions conducted electronically using Python's Django framework</p>
+                  </div>
+                </div>
+              </div>
+              <a className="resume" href={this.props.resumeURL} target="_blank"><div className="resume-link">Grab a PDF of my full resume</div></a>
+            </div>
+          </div>
+        );
+      }
+    });
+
+    ReactDOM.render(
+      <App profileData={DATA}/>,
+      document.getElementById('content')
+    );
+
+
+  </script>
+</body>
+</html>
